@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tugas BK</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1 id="Title">H2R Game</h1>
-    <div>
-        <p>&copy;Coding : Ryū</p>
-        <p>&copy;Design : Rexxa</p>
-        <p>&copy;SFX : Hilmi</p>
-    </div>
-    <a href=""><button>Battle Royale</button></a>
+    <h1 class="center">Selamat datang</h1>
+    <h2 class="center">Di Website Saya</h2>
     
+    <nav id="select">
+        <button>Tentang diriku</button>
+        <button>Projek ku</button>
+        <button>Lainnya</button>
+    </nav>
+    
+    <hr>
+    <div class="aboutUs page1">
+        <h3 class="center">
+            Nama saya : Dhimas Vikram<br>
+            Kelas : X TKJ B<br>
+            Sekolah : SMP IT Cihirup
+        </h3>
+        <p>
+            Sebelumnya terima kasih telah mengunjungi website saya.<br><br>
+            ini adalah potensi saya atau keahlian saya, saya suka sekali mencoding sejak
+            SMP Kelas 9, karena saya suka sekali bermain game dan mengutak-atik sesuatu
+            jadi saya,<button id="moreTeks" onclick="more()">...</button><br>
+            <button class="hidden" id="klar" onclick='klarifi()'>klarifikasi</button>
+        </p>
+        <p class="hidden" id="klarifikasi">
+            mungkin ada yang berpikir website ini memakai AI, ya... aku menggunakan AI untuk
+            mengajariku cara menggunakan atau menyelesaikannya, dan juga meminta komentar
+            kepada AI seperti apakah caraku sudah benar?, apakah caraku salah?, dll.
+            <br><br>
+            aku memang beberapa kali meminta AI untuk menyelesaikan tugas ku, tetapi meskipun begitu
+            aku harus mengerti apa yang saya pelajari dari tugas itu.
+            <br><br>
+            kok jadi gini sih?. Uhmmmmmmm, yaudah biar panjang aja teks nya
+        </p>
+        <hr>
+    </div>
+    <div class="project hidden">
+        
+    </div>
+    <div class="more hidden">
+        
+    </div>
+    
+    <div class="block" style="left: 75%;"></div>
+    <div class="block" id="secret"></div>
+    <div class="block" style="left: 25%;"></div>
+    <script src="main.js"></script>
 </body>
 </html>
