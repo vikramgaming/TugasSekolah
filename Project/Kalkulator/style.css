@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#exit {
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    background: #0d0d0d;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.layarTombol {
+  border: 3px orange solid;
+  width: 358px;
+  height: 451px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  background-color: hsla(0, 0%, 85%, 1);
+}
+
+.layarOutput {
+  width: 100%;
+  height: 225px;
+  position: relative;
+}
+
+#output {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+}
+
+.layarTombol button {
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  padding: 12px;
+  margin: 5px 0 0 4px;
+  background-color: hsla(0, 0%, 70%, 1);
+  box-shadow: 4px 4px 1px hsla(0, 0%, 75%, 1) inset;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.Bbottom {
+  position: relative;
+  left: 110%;
+}
+
+.layarTombol button:hover {
+  background-color: hsla(0, 0%, 60%, 1);
+  box-shadow: 2px 2px 1px hsla(0, 0%, 75%, 1);
+}

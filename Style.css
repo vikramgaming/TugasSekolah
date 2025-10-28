@@ -1,12 +1,13 @@
 :root{
     --bg: #28172a;
+    --main-color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
     background: var(--bg);
-    color: white;
+    color: var(--main-color);
     position: relative;
     font-family: Sans-Serif;
 }
@@ -24,21 +25,33 @@ nav {
     flex-direction: row;
 }
 
-#moreTeks {
+nav button {
+    background: #0d0d0d;
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+button {
     background: var(--bg);
-    color: white;
+    color: var(--main-color);
     cursor: pointer;
     font-size: 1rem;
     border: none;
 }
-.normal {
-    cursor: default;
+
+.project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-nav button {
-    background: #0d0d0d;
-    color: white;
-    border: none;
+.project a {
+    text-decoration: none;
+}
+
+#klar {
+    border: var(--main-color) .2px dotted;
 }
 
 .block {
@@ -52,9 +65,11 @@ nav button {
     animation: muter 2s linear infinite;
 }
 
+.normal {
+    cursor: default;
+}
+
 .hidden {
-    transition: 1s all;
-    opacity: 0;
     display: none;
 }
 

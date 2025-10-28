@@ -12,24 +12,29 @@
     <h2 class="center">Di Website Saya</h2>
     
     <nav id="select">
-        <button>Tentang diriku</button>
-        <button>Projek ku</button>
-        <button>Lainnya</button>
+        <button onclick="ganti('main', 'more', 'project')">Tentang diriku</button>
+        <button onclick="ganti('project', 'main', 'more')">Projek ku</button>
+        <button onclick="ganti('more', 'main', 'project')">Lainnya</button>
     </nav>
     
     <hr>
-    <div class="aboutUs page1">
+    <div class="main">
         <h3 class="center">
             Nama saya : Dhimas Vikram<br>
             Kelas : X TKJ B<br>
             Sekolah : SMP IT Cihirup
         </h3>
         <p>
-            Sebelumnya terima kasih telah mengunjungi website saya.<br><br>
+            Sebelumnya terima kasih telah mengunjungi website saya.
+            maaf kalau desain nya jelek, saya tidak bisa desain sesuatu.
+            <br><br>
             ini adalah potensi saya atau keahlian saya, saya suka sekali mencoding sejak
             SMP Kelas 9, karena saya suka sekali bermain game dan mengutak-atik sesuatu
-            jadi saya,<button id="moreTeks" onclick="more()">...</button><br>
-            <button class="hidden" id="klar" onclick='klarifi()'>klarifikasi</button>
+            jadi saya,<button id="moreTeks" onclick="more()">...</button><br><br>
+            maaf website ini hanya seperti ini saja karena saya tidak punya ide.
+            mungkin website ini terdapat bug atau apa segala macam seperti itu, karena
+            aku hanya developer pemula dan aku mencoding ini di hp, jadi belum ada uji 
+            coba di Laptop atau PC. 💻
         </p>
         <p class="hidden" id="klarifikasi">
             mungkin ada yang berpikir website ini memakai AI, ya... aku menggunakan AI untuk
@@ -39,19 +44,20 @@
             aku memang beberapa kali meminta AI untuk menyelesaikan tugas ku, tetapi meskipun begitu
             aku harus mengerti apa yang saya pelajari dari tugas itu.
             <br><br>
-            kok jadi gini sih?. Uhmmmmmmm, yaudah biar panjang aja teks nya
+            kok jadi gini sih?. Uhmmmmmmm, yaudah biar panjang aja teks nya. 😁
         </p>
-        <hr>
     </div>
     <div class="project hidden">
-        
+        <p>Disini ada beberapa website lain buatanku yang mungkin kalian tertarik. 👀</p>
+        <a href="Project/Kalkulator/index.html">Kalkulator</a>
     </div>
     <div class="more hidden">
         
     </div>
+    <hr>
     
     <div class="block" style="left: 75%;"></div>
-    <div class="block" id="secret"></div>
+    <div class="block" id="secret" onclick="klarifi()"></div>
     <div class="block" style="left: 25%;"></div>
     <script src="main.js"></script>
 </body>
