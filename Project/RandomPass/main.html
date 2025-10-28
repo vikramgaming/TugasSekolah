@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../../index.html"><button id="exit">Home</button></a>
+    <input type="number" id="lengthPass" placeholder="maksimal 12"><br>
+    <div class="container">
+        <div class="switch">
+            <label>
+                <input type="checkbox" id="addLower">
+                <span class="slider"></span>
+            </label>
+            <span>Huruf Kecil</span>
+        </div>
+        
+        <div class="switch">
+            <label>
+                <input type="checkbox" id="addUpper">
+                <span class="slider"></span>
+            </label>
+            <span>Huruf Kapital</span>
+        </div>
+        
+        <div class="switch">
+            <label>
+                <input type="checkbox" id="addNumber">
+                <span class="slider"></span>
+            </label>
+            <span>Nomor</span>
+        </div>
+    </div>
+    
+    <button onclick="submit()">Konfirmasi</button>
+    <p id="output">Masukkan jumlah karakter untuk passwordnya</p>
+    <button onclick="copy()" id="salin">Salin</button>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

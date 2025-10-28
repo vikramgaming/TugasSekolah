@@ -7,12 +7,13 @@ function more() {
     const teks = "tentu saja jadi suka coding. 😉";
     let i = 0;
     let adding = setInterval(() => {
-    if (i > teks.length-2) return stop();;
+    if (i > teks.length-3) return stop();;
         moreTeks.textContent += teks[i];
         i++;
     }, 25);
     function stop() {
-        setTimeout(() => {moreTeks.textContent += teks[i]}, 1000);
+        let end = teks.slice(-2);
+        setTimeout(() => {moreTeks.textContent += end}, 1000);
         clearInterval(adding);
     }
     moreTeks.disabled = true;
