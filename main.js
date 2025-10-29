@@ -28,9 +28,9 @@ function klarifi() {
 
 function ganti(show, hide1, hide2) {
     const more = document.getElementById("klarifikasi");
-    const showPage = document.getElementsByClassName(`${show}`);
-    const hide1Page = document.getElementsByClassName(`${hide1}`);
-    const hide2Page = document.getElementsByClassName(`${hide2}`);
+    const showPage = document.getElementsByClassName(show);
+    const hide1Page = document.getElementsByClassName(hide1);
+    const hide2Page = document.getElementsByClassName(hide2);
     if (!more.classList.contains("hidden")) more.classList.add("hidden");
     showPage[0].classList.remove("hidden");
     hide1Page[0].classList.add("hidden");
