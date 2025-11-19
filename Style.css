@@ -58,10 +58,6 @@ button {
     align-items: center;
 }
 
-#klar {
-    border: var(--main-color) .2px dotted;
-}
-
 .block {
     width: 40px;
     height: 10px;
@@ -71,10 +67,6 @@ button {
     transform: translateX(-50%);
     cursor: pointer;
     animation: muter 2s linear infinite;
-}
-
-.normal {
-    cursor: default;
 }
 
 .hidden {
